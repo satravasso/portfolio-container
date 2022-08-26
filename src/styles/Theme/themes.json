@@ -1,0 +1,32 @@
+{
+    "theme" : {
+      "yellow" : {
+        "id": "T_001",
+        "name": "Yellow",
+        "colors": {
+          "header": "#ffdfaf",
+          "background": "#ffdfaf",
+          "button": {
+            "text": "#FFFFFF",
+            "background": "#ac803e"
+          },
+          "headerColor": "#ac803e"
+        },
+        "font": "Tinos"
+      },
+      "pink" : {
+        "id": "T_007",
+        "name": "Pink",
+        "colors": {
+          "header": "#FFDEDE",
+          "background": "#FFDEDE",
+          "button": {
+            "text": "#ffffff",
+            "background": "#BA7575"
+          },
+          "headerColor": "#BA7575"
+        },
+        "font": "Ubuntu"
+      }
+    }
+  }
