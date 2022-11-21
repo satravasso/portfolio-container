@@ -58,13 +58,13 @@
     "eslint-plugin-react-hooks": "^1 || ^2 || ^3 || ^4.2.0",
     "eslint-plugin-testing-library": "^3.10.1",
     "husky": "^7.0.4",
+    "i18next-http-backend": "^2.0.1",
     "jest": "^28.1.0",
     "jest-canvas-mock": "^2.4.0",
     "prettier": "^2.7.1",
     "style-loader": "^3.3.1",
     "ts-jest": "^28.0.2",
     "ts-loader": "^9.3.0"
-
   },
   "extends": [
     "prettier"

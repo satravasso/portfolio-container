@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -29,4 +29,4 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
   }
-}
+};

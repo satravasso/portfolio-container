@@ -15,4 +15,4 @@ module.exports = {
   setupFilesAfterEnv: ['./src/jest.setup.ts', 'jest-canvas-mock'],
   moduleDirectories: ['node_modules', 'src'],
   transformIgnorePatterns: ['/!node_modules/flexboxgrid/']
-}
+};
