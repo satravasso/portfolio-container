@@ -15,17 +15,17 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
         <HeaderContent>
           <div>
             <a className="btn-header" onClick={() => setSelectedTheme(yellow)}>
-              <span>{t('title_1')}</span>
+              <span>{t('home')}</span>
             </a>
           </div>
           <div>
             <a className="btn-header" onClick={() => setSelectedTheme(pink)}>
-              <span>About me</span>
+              <span>{t('about_me')}</span>
             </a>
           </div>
           <div>
             <a className="btn-header" onClick={() => i18n.changeLanguage('pt')}>
-              <span>Contact</span>
+              <span>{t('contact')}</span>
             </a>
           </div>
           <div>
@@ -35,6 +35,11 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
           </div>
           <div>
             <a className="btn-header">
+              <span>Linkedin</span>
+            </a>
+          </div>
+          <div>
+            <a className="float">
               <span>Linkedin</span>
             </a>
           </div>

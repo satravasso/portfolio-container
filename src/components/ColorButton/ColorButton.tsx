@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { MainPageContent } from './styles';
+import { ColorButtonContent } from './styles';
 
-const MainPage = () => {
+const ColorButton = () => {
   const [active, setActive] = useState(false);
   const [expand, setExpand] = useState(false);
 
   return (
-    <MainPageContent>
+    <ColorButtonContent>
       <div
         className={`float-button ${active ? 'active' : ''}`}
         id="float-button"
@@ -39,8 +39,8 @@ const MainPage = () => {
           </li>
         </ul>
       </nav>
-    </MainPageContent>
+    </ColorButtonContent>
   );
 };
 
-export default MainPage;
+export default ColorButton;

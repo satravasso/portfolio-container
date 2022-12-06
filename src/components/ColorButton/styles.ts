@@ -19,7 +19,7 @@ function createCSS() {
     return css`${styles}`;
   }
 
-export const MainPageContent = styled.div`
+export const ColorButtonContent = styled.div`
 
 width: 100%;
 background-color: #FFDEDE;

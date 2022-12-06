@@ -27,7 +27,7 @@
     "src/**/*",
     "index.tsx",
     "styles"
-  ],
+, "public/locales"  ],
   "exclude": [
     "node_modules",
   ]
