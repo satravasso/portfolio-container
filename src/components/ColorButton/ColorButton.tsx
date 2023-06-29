@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import { ColorButtonContent } from './styles';
+import { Logo } from './logo';
+import { PalletColorProps } from './interfaces';
+import { pink, yellow } from '../../styles/Theme/themes.styled';
 
-const ColorButton = () => {
+const ColorButton = ({ setSelectedTheme }: PalletColorProps) => {
   const [active, setActive] = useState(false);
   const [expand, setExpand] = useState(false);
 
@@ -14,28 +17,66 @@ const ColorButton = () => {
           setActive(!active);
           setExpand(!expand);
         }}
-      ></div>
+      >
+        <Logo />
+      </div>
       <nav className={`circular-menu ${expand ? 'expand' : ''}`} id="circular-menu">
         <ul>
           <li>
-            <a className="icon-heart" href="#">
-              b
-            </a>
+            <div onClick={() => setSelectedTheme(yellow)}>
+              <svg width="25" height="25" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="17.5"
+                  cy="17.5"
+                  r="14"
+                  stroke={yellow.colors.header}
+                  stroke-width="6"
+                  fill={yellow.colors.header}
+                />
+              </svg>
+            </div>
           </li>
           <li>
-            <a className="icon-cart" href="#">
-              a
-            </a>
+            <div onClick={() => setSelectedTheme(pink)}>
+              <svg width="25" height="25" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="17.5"
+                  cy="17.5"
+                  r="14"
+                  stroke={pink.colors.header}
+                  stroke-width="6"
+                  fill={pink.colors.header}
+                />
+              </svg>
+            </div>
           </li>
           <li>
-            <a className="icon-tag" href="#">
-              c
-            </a>
+            <div onClick={() => setSelectedTheme(yellow)}>
+              <svg width="25" height="25" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="17.5"
+                  cy="17.5"
+                  r="14"
+                  stroke={yellow.colors.header}
+                  stroke-width="6"
+                  fill={yellow.colors.header}
+                />
+              </svg>
+            </div>
           </li>
           <li>
-            <a className="icon-date" href="#">
-              d
-            </a>
+            <div onClick={() => setSelectedTheme(pink)}>
+              <svg width="25" height="25" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                  cx="17.5"
+                  cy="17.5"
+                  r="14"
+                  stroke={pink.colors.header}
+                  stroke-width="6"
+                  fill={pink.colors.header}
+                />
+              </svg>
+            </div>
           </li>
         </ul>
       </nav>

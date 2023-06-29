@@ -8,10 +8,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    background-color: #ffdede7a;
-    /* background-color: #FFDEDE; */
-    overflow: hidden;
+    min-height: 100vh;
+
+    background-image: linear-gradient(#275c91, #65b4ce, #ee96bc);
+
   }
 `
 export default GlobalStyles

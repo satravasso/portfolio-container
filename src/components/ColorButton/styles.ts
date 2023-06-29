@@ -29,32 +29,26 @@ ${createCSS}
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #BA7575;
+  background: ${({ theme }) => theme.colors.header};
   position: absolute;
   bottom: 1rem;
   right: 1rem;
   z-index: 100;
   transition: transform var(--animation-time);
   cursor: pointer;
+  display: flex;
+    align-items: center;
+    align-content: center;
+    padding: .5rem;
   
   &.pulsed {
     transform: rotate(45deg);
-    background: darken(#BA7575,15)
-  }
-  
-  &::before,
-  &::after {
-    position: absolute;
-    width: 40%;
-    height: 4%;
-    content: '';
-    top: 49%;
-    left: 30%;
-    background: #fff;
+    background: #FFDEDE;
   }
   
   &::after {
     transform: rotate(90deg);
+   
   }
 }
 
@@ -62,7 +56,7 @@ ${createCSS}
   position: absolute;
   width: 16rem;
   height: 16rem;
-  background: #BA7575;
+  background: #fff;
   bottom: -5.5rem;
   right: -5.5rem;
   border-radius: 50%;

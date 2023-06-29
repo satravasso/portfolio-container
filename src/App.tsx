@@ -13,7 +13,7 @@ const App = () => {
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
       <Header setSelectedTheme={setSelectedTheme} />
-      <MainPage />
+      <MainPage setSelectedTheme={setSelectedTheme} />
     </ThemeProvider>
   );
 };

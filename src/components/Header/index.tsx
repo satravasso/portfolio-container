@@ -10,7 +10,7 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
 
   return (
     <HeaderContentainer>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', alignItems: 'center' }}>
         <Logo />
         <HeaderContent>
           <div>
@@ -19,28 +19,13 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
             </a>
           </div>
           <div>
-            <a className="btn-header" onClick={() => setSelectedTheme(pink)}>
+            <a className="btn-header" onClick={() => i18n.changeLanguage('en')}>
               <span>{t('about_me')}</span>
             </a>
           </div>
           <div>
             <a className="btn-header" onClick={() => i18n.changeLanguage('pt')}>
               <span>{t('contact')}</span>
-            </a>
-          </div>
-          <div>
-            <a className="btn-header" onClick={() => i18n.changeLanguage('en')}>
-              <span>GitHub</span>
-            </a>
-          </div>
-          <div>
-            <a className="btn-header">
-              <span>Linkedin</span>
-            </a>
-          </div>
-          <div>
-            <a className="float">
-              <span>Linkedin</span>
             </a>
           </div>
         </HeaderContent>

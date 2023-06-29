@@ -11,10 +11,9 @@ height: 5rem;
 margin-right: 0;
 margin-left: 0;
 padding-left: 0;
-background-color: ${({ theme }) => theme.colors.header};
--webkit-backdrop-filter: blur(5px);
-backdrop-filter: blur(5px);
+backdrop-filter: blur(4px);
 border-bottom: 1px solid rgba(0,5,85,.1);
+z-index: 1000;
 `
 
 export const HeaderContent = styled.div`
@@ -66,17 +65,6 @@ color: ${({ theme }) => theme.colors.fontColor};
       }
     }
 
-    .float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#0C9;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	box-shadow: 2px 2px 3px #999;
-}
+
 }
 `
