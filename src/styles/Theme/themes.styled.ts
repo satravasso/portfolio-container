@@ -3,9 +3,9 @@ export const pink = {
   colors: {
     bodyColor: "#ffdede7a",
     header: "#FFDEDE",
-    borderColor: "rgba(0,5,85,.1)",
-    fontColor: "rgba(0, 0, 0, 0.6)",
-    iconColor: "rgba(0, 0, 0, 0.45)",
+    borderColor: "#1E212D",
+    fontColor: "#1E212D",
+    iconColor: "#1E212D",
     detailColor: "#BA7575",
   },
 };
@@ -16,8 +16,8 @@ export const yellow = {
     bodyColor: "#ac803e ",
     header: "#ffdfaf",
     borderColor: "rgba(0,5,85,.1)",
-    fontColor: "rgba(0, 0, 0, 0.6)",
-    iconColor: "rgba(0, 0, 0, 0.45)",
+    fontColor: "#1E212D",
+    iconColor: "#1E212D",
     detailColor: "#ac803e",
   },
 };

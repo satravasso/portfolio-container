@@ -10,8 +10,13 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     min-height: 100vh;
 
-    background-image: linear-gradient(#275c91, #65b4ce, #ee96bc);
+  /*   background-image: linear-gradient(#275c91, #65b4ce, #ee96bc); */
+  background: ${({ theme }: any) => theme.colors.bodyColor};
+  }
 
+  #root{
+    display: flex;
+    padding: 3rem;
   }
 `
 export default GlobalStyles

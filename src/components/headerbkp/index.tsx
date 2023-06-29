@@ -1,12 +1,11 @@
 import { pink, yellow } from '../../styles/Theme/themes.styled';
-import ThemeButton from '../ThemeButton';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import { HeaderContent, HeaderContentainer } from './styles';
 
 import { useTranslation } from 'react-i18next';
 
-const Header = ({ setSelectedTheme }: HeaderProps) => {
+const SimpleHeader = ({ setSelectedTheme }: HeaderProps) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -30,10 +29,10 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
             </a>
           </div>
         </HeaderContent>
-        <ThemeButton />
+        <div></div>
       </div>
     </HeaderContentainer>
   );
 };
 
-export default Header;
+export default SimpleHeader;

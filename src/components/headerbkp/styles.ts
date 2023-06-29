@@ -2,29 +2,35 @@ import styled from 'styled-components'
 
 
 export const HeaderContentainer = styled.div`
-
+position: fixed;
+left: 0;
+top: 0;
+display: block;
 width: 100%;
-border: 3px solid #1B2021;
-border-radius: 50px;
-
-background-color: ${({ theme }) => theme.colors.header};
+height: 5rem;
+margin-right: 0;
+margin-left: 0;
+padding-left: 0;
+backdrop-filter: blur(4px);
+border-bottom: 1px solid rgba(0,5,85,.1);
+z-index: 1000;
 `
 
 export const HeaderContent = styled.div`
 display: flex;
 justify-content: center;
-/* margin-right: auto; */
+margin-right: auto;
 div {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     padding: 2rem;
     color: ${({ theme }) => theme.colors.fontColor};
     
 }
 
 .btn-header {
-  cursor: pointer;
-  color: ${({ theme }) => theme.colors.fontColor};
+    cursor: pointer;
+color: ${({ theme }) => theme.colors.fontColor};
   text-decoration: none;
   position: relative;
   display: inline-block;

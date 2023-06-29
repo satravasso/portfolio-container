@@ -27,4 +27,6 @@ position: absolute;
 background-repeat: no-repeat;
 `
 
-export const MainPageContent = styled.section` `
+export const MainPageContent = styled.section`
+
+  `

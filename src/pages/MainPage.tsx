@@ -3,13 +3,7 @@ import { MainPageProps } from './interfaces';
 import { MainPageContent, BackgroundImg, Moon, Stars } from './styles';
 
 const MainPage = ({ setSelectedTheme }: MainPageProps) => {
-  return (
-    <MainPageContent>
-      <Stars />
-      <Moon />
-      <BackgroundImg></BackgroundImg>
-    </MainPageContent>
-  );
+  return <MainPageContent></MainPageContent>;
 };
 
 export default MainPage;
