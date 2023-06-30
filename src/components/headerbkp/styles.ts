@@ -21,7 +21,6 @@ display: flex;
 justify-content: center;
 margin-right: auto;
 div {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding: 2rem;
     color: ${({ theme }) => theme.colors.fontColor};

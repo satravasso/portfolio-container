@@ -3,7 +3,10 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 :root {
-  --animation-time: .3s;
+  --animation-time: .3s;0
+}
+*{
+  font-family: 'Montserrat', sans-serif;
 }
   body {
     margin: 0;
@@ -15,7 +18,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #root{
-    display: flex;
     padding: 3rem;
   }
 `

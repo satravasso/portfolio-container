@@ -1,12 +1,12 @@
 import { pink, yellow } from '../../styles/Theme/themes.styled';
-import ThemeButton from '../ThemeButton';
+import SettingsButton from '../SettingsButton';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import * as S from './styles';
 
 import { useTranslation } from 'react-i18next';
 
-const Header = ({ setSelectedTheme }: HeaderProps) => {
+const Header = ({ setSelectedTheme, selectedTheme }: HeaderProps) => {
   const { t, i18n } = useTranslation();
 
   return (
@@ -16,7 +16,7 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
         <S.HeaderLine />
         <S.HeaderContent>
           <div>
-            <a className="btn-header" onClick={() => setSelectedTheme(yellow)}>
+            <a className="btn-header" onClick={() => setSelectedTheme(selectedTheme === pink ? yellow : pink)}>
               <span>{t('home')}</span>
             </a>
           </div>
@@ -32,7 +32,7 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
           </div>
         </S.HeaderContent>
         <S.HeaderLine />
-        <ThemeButton />
+        <SettingsButton />
       </S.HeaderItems>
     </S.HeaderContentainer>
   );

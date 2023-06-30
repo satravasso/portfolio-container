@@ -12,8 +12,10 @@ const App = () => {
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
-      <Header setSelectedTheme={setSelectedTheme} />
-      <MainPage setSelectedTheme={setSelectedTheme} />
+      <div style={{ display: 'flex', gap: '2rem', flexDirection: 'column' }}>
+        <Header setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
+        <MainPage setSelectedTheme={setSelectedTheme} />
+      </div>
     </ThemeProvider>
   );
 };
