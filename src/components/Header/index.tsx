@@ -2,7 +2,7 @@ import { pink, yellow } from '../../styles/Theme/themes.styled';
 import ThemeButton from '../ThemeButton';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
-import { HeaderContent, HeaderContentainer } from './styles';
+import * as S from './styles';
 
 import { useTranslation } from 'react-i18next';
 
@@ -10,10 +10,11 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <HeaderContentainer>
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+    <S.HeaderContentainer>
+      <S.HeaderItems>
         <Logo />
-        <HeaderContent>
+        <S.HeaderLine />
+        <S.HeaderContent>
           <div>
             <a className="btn-header" onClick={() => setSelectedTheme(yellow)}>
               <span>{t('home')}</span>
@@ -29,10 +30,11 @@ const Header = ({ setSelectedTheme }: HeaderProps) => {
               <span>{t('contact')}</span>
             </a>
           </div>
-        </HeaderContent>
+        </S.HeaderContent>
+        <S.HeaderLine />
         <ThemeButton />
-      </div>
-    </HeaderContentainer>
+      </S.HeaderItems>
+    </S.HeaderContentainer>
   );
 };
 

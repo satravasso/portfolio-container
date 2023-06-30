@@ -11,7 +11,7 @@ background-color: ${({ theme }) => theme.colors.detailColor};
 
 export const Typography = styled.div`
  font-family: 'Montserrat', sans-serif;
- font-weight: bold;
+ font-weight: 500;
     padding: 1rem 2rem;
     color: ${({ theme }) => theme.colors.fontColor};
 `

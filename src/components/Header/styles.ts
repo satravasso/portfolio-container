@@ -8,15 +8,29 @@ border: 3px solid #1B2021;
 border-radius: 50px;
 
 background-color: ${({ theme }) => theme.colors.header};
+padding: 0 1rem;
+`
+
+export const HeaderItems = styled.div`    
+display: flex;
+align-items: center;
+justify-content: space-between;
+`
+
+export const HeaderLine = styled.div`  
+border-bottom:  2px solid #1B2021;
+width: 20%;
+
 `
 
 export const HeaderContent = styled.div`
-display: flex;
-justify-content: center;
-/* margin-right: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 div {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-weight: 500;
     padding: 2rem;
     color: ${({ theme }) => theme.colors.fontColor};
     

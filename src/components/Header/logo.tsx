@@ -2,7 +2,7 @@ export const Logo = () => {
   return (
     <svg
       style={{
-        padding: '0 2rem'
+        paddingLeft: '1rem'
       }}
       width="3.5rem"
       height="3.5rem"
