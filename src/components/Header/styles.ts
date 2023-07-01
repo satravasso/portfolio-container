@@ -5,7 +5,7 @@ export const HeaderContentainer = styled.div`
   border: ${({ theme }) => theme.colors.borderPrimary};
   border-radius: 50px;
 
-  background-color: ${({ theme }) => theme.colors.header};
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const HeaderItems = styled.div`
@@ -55,7 +55,7 @@ export const HeaderContent = styled.div`
       bottom: 0;
       height: 2px;
       width: 100%;
-      background-color: ${({ theme }) => theme.colors.detailColor};
+      background-color: ${({ theme }) => theme.colors.secondary};
 
       transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
     }

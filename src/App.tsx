@@ -4,11 +4,11 @@ import Header from './components/Header';
 import MainPage from './pages/MainPage';
 import GlobalStyles from './styles/global.styles';
 import { ThemeProps } from './styles/Theme/interfaces';
-import { pink } from './styles/Theme/themes.styled';
+import { green } from './styles/Theme/themes.styled';
 import './utils/i18n';
 
 const App = () => {
-  const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(pink);
+  const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(green);
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />

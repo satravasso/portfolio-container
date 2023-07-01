@@ -1,5 +1,10 @@
-import { ThemeProps } from "../../styles/Theme/interfaces";
+import { ThemeProps } from '../../styles/Theme/interfaces';
 
-export interface PalletColorProps {
-   setSelectedTheme: React.Dispatch<React.SetStateAction<ThemeProps>>
+export interface SettingsButtonProps {
+  setSelectedTheme: React.Dispatch<React.SetStateAction<ThemeProps>>;
+  selectedTheme: ThemeProps;
+}
+
+export interface ColorOptionProps {
+  $color: string;
 }

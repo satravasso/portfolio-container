@@ -1,4 +1,4 @@
-import { pink, yellow } from '../../styles/Theme/themes.styled';
+import { pink } from '../../styles/Theme/themes.styled';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import { HeaderContent, HeaderContentainer } from './styles';
@@ -14,7 +14,7 @@ const SimpleHeader = ({ setSelectedTheme }: HeaderProps) => {
         <Logo />
         <HeaderContent>
           <div>
-            <a className="btn-header" onClick={() => setSelectedTheme(yellow)}>
+            <a className="btn-header" onClick={() => setSelectedTheme(pink)}>
               <span>{t('home')}</span>
             </a>
           </div>
