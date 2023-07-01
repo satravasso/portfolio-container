@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CardContainer = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
+  /* background-color: ${({ theme }) => theme.colors.primary}; */
   border: ${({ theme }) => theme.colors.borderPrimary};
 
   width: 100%;

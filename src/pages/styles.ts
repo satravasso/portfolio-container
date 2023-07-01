@@ -28,4 +28,9 @@ export const Title = styled.h2`
   font-weight: 500;
 `;
 
+export const TitleCard = styled.h3`
+  font-size: 2rem;
+  font-weight: 500;
+`;
+
 export const Description = styled.span``;

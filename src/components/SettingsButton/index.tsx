@@ -14,7 +14,7 @@ const SettingsButton = (props: SettingsButtonProps) => {
   return (
     <S.DropdownWrapper>
       <S.ColorButtonContent onClick={() => setOpenDropdown(!openDropdown)}>
-        <S.Title>Settings</S.Title>
+        <S.Title>Preferences</S.Title>
       </S.ColorButtonContent>
       <Dropdown setOpen={setOpenDropdown} open={openDropdown}>
         <S.ColorThemeTitles>Language</S.ColorThemeTitles>

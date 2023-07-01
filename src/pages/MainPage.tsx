@@ -7,27 +7,25 @@ const MainPage = ({ setSelectedTheme }: MainPageProps) => {
     <S.MainPageContent>
       <S.CardContainer>
         <S.CardColumn>
-          <Card>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
+          {/* <Card backgroundColor="#FFDEDE"> */}
+          <Card backgroundColor="#FFFF">
+            <S.TitleCard>A little bit of me</S.TitleCard>
+            My name is Sabrina, I`m working as a programmer since 2017. I started working as back-end developer using
+            Java and then I have the opportunity to switch my career to front-end and I sill into until now. You can see
+            my full tragetory here
           </Card>
-          <Card>
-            Here you can see my timeline progression of my career. You can also export my curriculun as pdf or doc
-          </Card>
+          <Card backgroundColor="#FFFF">Check my repositories and works here</Card>
         </S.CardColumn>
         <S.CardColumn style={{ marginTop: '2rem' }}>
-          <Card> Ways that you can fallow me on social medias or contact me </Card>
-          <Card>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.
+          <Card backgroundColor="#FFFF"> Ways that you can fallow me on social medias or contact me </Card>
+          <Card backgroundColor="#FFFF">
+            <S.TitleCard>What about this site?</S.TitleCard>
+            As you can see this site is build as micro-fronend and is very robust for the proposition, but is how I
+            found to show almost everything that I learned in my career
+          </Card>
+          <Card backgroundColor="#FFDEDE">
+            <S.TitleCard>Technologies used</S.TitleCard>
+            React, webpack, module federation, styled component, eslint, i18n
           </Card>
         </S.CardColumn>
       </S.CardContainer>

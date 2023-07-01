@@ -40,4 +40,18 @@ export const blue = {
   }
 };
 
+export const old = {
+  name: 'old-theme',
+  colors: {
+    bodyColor: '#ffdfcf',
+    primary: '#FFDEDE',
+    borderColor: '#1E212D',
+    fontColor: '#1E212D',
+    iconColor: '#1E212D',
+    secondary: '#BA7575',
+    borderPrimary: '2px solid #1b2021',
+    borderSecondary: '1px solid #6a6c72'
+  }
+};
+
 export const color = [pink, green, blue];
