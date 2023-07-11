@@ -11,6 +11,9 @@
     "prepare": "husky install",
     "clean": "rm -rf dist"
   },
+  "engines": {
+    "node": ">=16.0.0"
+},
   "dependencies": {
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.26",
