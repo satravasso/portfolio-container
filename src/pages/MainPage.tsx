@@ -1,8 +1,7 @@
 import Card from '../components/Card';
-import { MainPageProps } from './interfaces';
 import * as S from './styles';
 
-function MainPage({ setSelectedTheme }: MainPageProps) {
+function MainPage() {
   return (
     <S.MainPageContent>
       <S.CardContainer>

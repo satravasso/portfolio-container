@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import DropdownProps from './interfaces';
 import * as S from './styles';
 

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import * as S from './styles';
-import { Logo } from './logo';
+// import { Logo } from './logo';
 import { SettingsButtonProps } from './interfaces';
 import { pink, green, blue } from '../../styles/Theme/themes.styled';
 import Dropdown from '../Dropdown';
@@ -9,7 +9,7 @@ import Dropdown from '../Dropdown';
 function SettingsButton(props: SettingsButtonProps) {
   const [openDropdown, setOpenDropdown] = useState(true);
   const { setSelectedTheme } = props;
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   return (
     <S.DropdownWrapper>

@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     min-height: 100vh;
 
   /*   background-image: linear-gradient(#275c91, #65b4ce, #ee96bc); */
-  background: ${({ theme }: any) => theme.colors.bodyColor};
+  background: ${({ theme }) => theme.colors.bodyColor};
   }
 
   #root{

@@ -8,4 +8,6 @@ export const getLocalStorage = (key: string) => {
   if (value) {
     return JSON.parse(value);
   }
+
+  return null;
 };

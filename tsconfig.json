@@ -14,20 +14,37 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": false,
     "noEmit": false,
     "jsx": "react-jsx",
-    "sourceMap": true
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ]
+    }
   },
   "include": [
     "src",
     "src/**/*",
     "index.tsx",
-    "styles"
-, "public/locales"  ],
+    "styles",
+    "public/locales"
+  ],
   "exclude": [
     "node_modules",
-  ]
+  ],
+
 }

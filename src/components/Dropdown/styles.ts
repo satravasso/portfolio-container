@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { DropdownStylesProps } from './interfaces';
 
 export const DropdownContainer = styled.div`
   position: absolute;
