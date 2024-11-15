@@ -18,5 +18,8 @@ export default [
       "no-undef": "error",
       "react/react-in-jsx-scope": "off"
     }
-  }
+  },
+  {
+    ignores: ["webpack.*", "jest.*", ".env*"]
+}
 ];
