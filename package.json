@@ -1,5 +1,5 @@
 {
-  "name": "portifolio",
+  "name": "my-beautiful-portifolio",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
