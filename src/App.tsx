@@ -7,7 +7,7 @@ import { ThemeProps } from './styles/Theme/interfaces';
 import { old } from './styles/Theme/themes.styled';
 import './utils/i18n';
 
-const App = () => {
+function App() {
   const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(old);
   return (
     <ThemeProvider theme={selectedTheme}>
@@ -18,6 +18,6 @@ const App = () => {
       </div>
     </ThemeProvider>
   );
-};
+}
 
 export default App;

@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import DropdownProps from './interfaces';
 import * as S from './styles';
-import { useState } from 'react';
 
-const Dropdown = (props: DropdownProps) => {
+function Dropdown(props: DropdownProps) {
   const { children, open } = props;
 
   return (
@@ -14,6 +14,6 @@ const Dropdown = (props: DropdownProps) => {
       )}
     </>
   );
-};
+}
 
 export default Dropdown;

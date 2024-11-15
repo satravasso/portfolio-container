@@ -1,11 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import SettingsButton from '../SettingsButton';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import * as S from './styles';
 
-import { useTranslation } from 'react-i18next';
-
-const Header = ({ setSelectedTheme, selectedTheme }: HeaderProps) => {
+function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -35,6 +34,6 @@ const Header = ({ setSelectedTheme, selectedTheme }: HeaderProps) => {
       </S.HeaderItems>
     </S.HeaderContentainer>
   );
-};
+}
 
 export default Header;

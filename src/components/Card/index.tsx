@@ -1,14 +1,14 @@
 import { CardProps } from './interfaces';
 import * as S from './styles';
 
-const Card = (props: CardProps) => {
+function Card(props: CardProps) {
   const { children, backgroundColor } = props;
 
   return (
-    <S.CardContainer style={{ backgroundColor: backgroundColor }}>
+    <S.CardContainer style={{ backgroundColor }}>
       <div style={{ padding: '1rem' }}>{children}</div>
     </S.CardContainer>
   );
-};
+}
 
 export default Card;

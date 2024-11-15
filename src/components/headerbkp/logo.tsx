@@ -1,4 +1,4 @@
-export const Logo = () => {
+export function Logo() {
   return (
     <svg
       style={{
@@ -16,4 +16,4 @@ export const Logo = () => {
       />
     </svg>
   );
-};
+}

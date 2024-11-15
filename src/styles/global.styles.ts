@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -20,5 +19,5 @@ const GlobalStyles = createGlobalStyle`
   #root{
     padding: 3rem;
   }
-`
-export default GlobalStyles
+`;
+export default GlobalStyles;
