@@ -1,8 +1,7 @@
 import Card from '../components/Card';
-import { MainPageProps } from './interfaces';
 import * as S from './styles';
 
-const MainPage = ({ setSelectedTheme }: MainPageProps) => {
+function MainPage() {
   return (
     <S.MainPageContent>
       <S.CardContainer>
@@ -35,6 +34,6 @@ const MainPage = ({ setSelectedTheme }: MainPageProps) => {
       </S.TextContainer>
     </S.MainPageContent>
   );
-};
+}
 
 export default MainPage;

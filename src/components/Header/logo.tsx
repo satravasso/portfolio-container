@@ -1,6 +1,6 @@
 import { LogoProps } from './interfaces';
 
-export const Logo = (props: LogoProps) => {
+export function Logo(props: LogoProps) {
   const { color } = props;
   return (
     <svg width="3.5rem" height="3.5rem" viewBox="0 0 136 140" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -10,4 +10,4 @@ export const Logo = (props: LogoProps) => {
       />
     </svg>
   );
-};
+}

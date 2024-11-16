@@ -1,11 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { pink } from '../../styles/Theme/themes.styled';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import { HeaderContent, HeaderContentainer } from './styles';
 
-import { useTranslation } from 'react-i18next';
-
-const SimpleHeader = ({ setSelectedTheme }: HeaderProps) => {
+function SimpleHeader({ setSelectedTheme }: HeaderProps) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -29,10 +28,10 @@ const SimpleHeader = ({ setSelectedTheme }: HeaderProps) => {
             </a>
           </div>
         </HeaderContent>
-        <div></div>
+        <div />
       </div>
     </HeaderContentainer>
   );
-};
+}
 
 export default SimpleHeader;

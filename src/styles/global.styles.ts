@@ -1,5 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
-
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 :root {
@@ -13,12 +12,11 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     min-height: 100vh;
 
-  /*   background-image: linear-gradient(#275c91, #65b4ce, #ee96bc); */
-  background: ${({ theme }: any) => theme.colors.bodyColor};
+  background: ${({ theme }) => theme.colors.bodyColor};
   }
 
   #root{
     padding: 3rem;
   }
-`
-export default GlobalStyles
+`;
+export default GlobalStyles;

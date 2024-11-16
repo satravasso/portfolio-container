@@ -1,11 +1,10 @@
-import SettingsButton from '../SettingsButton';
+import { useTranslation } from 'react-i18next';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import * as S from './styles';
+import Button from '@components/Button';
 
-import { useTranslation } from 'react-i18next';
-
-const Header = ({ setSelectedTheme, selectedTheme }: HeaderProps) => {
+function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
   const { t, i18n } = useTranslation();
 
   return (
@@ -31,10 +30,10 @@ const Header = ({ setSelectedTheme, selectedTheme }: HeaderProps) => {
           </div>
         </S.HeaderContent>
         <S.HeaderLine />
-        <SettingsButton setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
+        <Button setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
       </S.HeaderItems>
     </S.HeaderContentainer>
   );
-};
+}
 
 export default Header;
