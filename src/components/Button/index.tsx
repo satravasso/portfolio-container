@@ -6,7 +6,7 @@ import { SettingsButtonProps } from './interfaces';
 import { pink, green, blue } from '../../styles/Theme/themes.styled';
 import Dropdown from '../Dropdown';
 
-function SettingsButton(props: SettingsButtonProps) {
+function Button(props: SettingsButtonProps) {
   const [openDropdown, setOpenDropdown] = useState(true);
   const { setSelectedTheme } = props;
   const { i18n } = useTranslation();
@@ -34,4 +34,4 @@ function SettingsButton(props: SettingsButtonProps) {
   );
 }
 
-export default SettingsButton;
+export default Button;

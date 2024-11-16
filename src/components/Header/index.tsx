@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next';
-import SettingsButton from '../SettingsButton';
 import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import * as S from './styles';
+import Button from '@components/Button';
 
 function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
   const { t, i18n } = useTranslation();
@@ -30,7 +30,7 @@ function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
           </div>
         </S.HeaderContent>
         <S.HeaderLine />
-        <SettingsButton setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
+        <Button setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
       </S.HeaderItems>
     </S.HeaderContentainer>
   );
