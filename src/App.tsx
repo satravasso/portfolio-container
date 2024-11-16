@@ -1,20 +1,26 @@
-import { useState } from 'react';
+
 import { ThemeProvider } from 'styled-components';
 import MainPage from './pages/MainPage';
 import GlobalStyles from './styles/global.styles';
-import { ThemeProps } from './styles/Theme/interfaces';
-import { pink } from './styles/Theme/themes.styled';
+
 import './utils/i18n';
 import Header from '@components/Header';
+import useThemeStore from 'store/useThemeStore';
+import { useEffect } from 'react';
 
 function App() {
-  const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(pink);
+  const {theme} = useThemeStore()
+
+  useEffect(() => {
+console.log(theme)
+  },[theme])
+
   return (
-    <ThemeProvider theme={selectedTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       <div style={{ display: 'flex', gap: '2rem', flexDirection: 'column' }}>
-        <Header setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
-        <MainPage  />
+        <Header />
+        <MainPage />
       </div>
     </ThemeProvider>
   );

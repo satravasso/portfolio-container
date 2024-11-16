@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import * as S from './styles';
-// import { Logo } from './logo';
-import { SettingsButtonProps } from './interfaces';
+
 import { pink, green, blue } from '../../styles/Theme/themes.styled';
 import Dropdown from '../Dropdown';
+import useThemeStore from 'store/useThemeStore';
 
-function Button(props: SettingsButtonProps) {
+function Button() {
   const [openDropdown, setOpenDropdown] = useState(true);
-  const { setSelectedTheme } = props;
+  const {toggleTheme} = useThemeStore()
   const { i18n } = useTranslation();
 
   return (
@@ -25,9 +25,9 @@ function Button(props: SettingsButtonProps) {
         </S.LanguageContainer>
         <S.ColorThemeTitles>Wich is your favorite color?</S.ColorThemeTitles>
         <S.ColorContainer>
-          <S.ColorOption $color="#F7C8E0" onClick={() => setSelectedTheme(pink)} />
-          <S.ColorOption $color="#CDF0EA" onClick={() => setSelectedTheme(green)} />
-          <S.ColorOption $color="#C0DEFF" onClick={() => setSelectedTheme(blue)} />
+          <S.ColorOption $color="#F7C8E0" onClick={() => toggleTheme(pink)} />
+          <S.ColorOption $color="#CDF0EA" onClick={() => toggleTheme(green)} />
+          <S.ColorOption $color="#C0DEFF" onClick={() => toggleTheme(blue)} />
         </S.ColorContainer>
       </Dropdown>
     </S.DropdownWrapper>

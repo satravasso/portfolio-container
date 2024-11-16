@@ -1,16 +1,16 @@
 import { useTranslation } from 'react-i18next';
-import { HeaderProps } from './interfaces';
 import { Logo } from './logo';
 import * as S from './styles';
 import Button from '@components/Button';
+import useThemeStore from 'store/useThemeStore';
 
-function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
+function Header() {
   const { t, i18n } = useTranslation();
-
+  const {theme} = useThemeStore()
   return (
     <S.HeaderContentainer>
       <S.HeaderItems>
-        <Logo color={selectedTheme.colors.iconColor} />
+        <Logo color={theme.colors.iconColor} />
         <S.HeaderLine />
         <S.HeaderContent>
           <div>
@@ -30,7 +30,7 @@ function Header({ setSelectedTheme, selectedTheme }: HeaderProps) {
           </div>
         </S.HeaderContent>
         <S.HeaderLine />
-        <Button setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
+        <Button />
       </S.HeaderItems>
     </S.HeaderContentainer>
   );
