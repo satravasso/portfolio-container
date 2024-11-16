@@ -2,12 +2,13 @@ import Header from "@components/Header"
 import * as S from "./styles"
 import React from "react"
 import LayoutProps from "./interfaces"
+import { Outlet } from "react-router-dom"
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = () => {
   return (
     <S.LayoutContainer>
       <Header />
-      {children}
+      <Outlet />
     </S.LayoutContainer>
   )
 }

@@ -1,37 +1,30 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const HeaderContentainer = styled.div`
   width: 100%;
   border: ${({ theme }) => theme.colors.borderPrimary};
   border-radius: 50px;
-
+  display: flex;
   background-color: ${({ theme }) => theme.colors.primary};
-`;
-
-export const HeaderItems = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
-`;
+`
 
 export const HeaderLine = styled.div`
   border-bottom: 2px solid #1b2021;
-  width: 20%;
-`;
+  width: 100%;
+`
 
 export const HeaderContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  div {
-    font-weight: 500;
-    padding: 2rem;
-    color: ${({ theme }) => theme.colors.fontColor};
-  }
+  padding: 2rem;
+  width: 100%;
 
   .btn-header {
+    font-weight: 500;
     cursor: pointer;
     color: ${({ theme }) => theme.colors.fontColor};
     text-decoration: none;
@@ -39,12 +32,12 @@ export const HeaderContent = styled.div`
     display: inline-block;
     height: 100%;
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
     }
     &:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
     }
@@ -68,4 +61,4 @@ export const HeaderContent = styled.div`
       }
     }
   }
-`;
+`
