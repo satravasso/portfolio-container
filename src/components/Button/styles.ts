@@ -25,8 +25,9 @@ export const ColorThemeTitles = styled.div`
 
 export const ColorContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1rem;
+  gap: 1rem;;
 `;
 export const ColorOption = styled.div<ColorOptionProps>`
   border-radius: 100px;
@@ -38,8 +39,9 @@ export const ColorOption = styled.div<ColorOptionProps>`
 `;
 export const LanguageContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 1rem;
+  gap: 1rem;
 `;
 export const LanguageOption = styled.div`
   border-radius: 50px;

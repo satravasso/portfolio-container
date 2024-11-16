@@ -13,7 +13,7 @@ function MainPage() {
             Java and then I have the opportunity to switch my career to front-end and I sill into until now. You can see
             my full tragetory here
           </Card>
-          <Card backgroundColor="#FFFF">Check my repositories and works here</Card>
+          <Card backgroundColor="#FFFF">works & repositories</Card>
         </S.CardColumn>
         <S.CardColumn style={{ marginTop: '2rem' }}>
           <Card backgroundColor="#FFFF"> Ways that you can fallow me on social medias or contact me </Card>

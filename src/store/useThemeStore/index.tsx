@@ -1,4 +1,4 @@
-import { pink } from "@styles/Theme/themes.styled"
+import { pink } from "@styles/Theme"
 import { useThemeState } from "./interface"
 import { create } from "zustand"
 
