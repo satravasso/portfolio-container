@@ -40,4 +40,4 @@ export const pink = {
   }
 };
 
-export const color = [pink, green, blue];
+export const colorsTheme = [pink, green, blue];

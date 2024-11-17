@@ -1,23 +1,19 @@
-import { useState } from 'react';
-import { ThemeProvider } from 'styled-components';
-import MainPage from './pages/MainPage';
-import GlobalStyles from './styles/global.styles';
-import { ThemeProps } from './styles/Theme/interfaces';
-import { pink } from './styles/Theme/themes.styled';
-import './utils/i18n';
-import Header from '@components/Header';
+import { ThemeProvider } from "styled-components"
+import GlobalStyles from "./styles/global.styles"
+
+import "./utils/i18n"
+import useThemeStore from "store/useThemeStore"
+import { Routers } from "routers/Routers"
 
 function App() {
-  const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(pink);
+  const { theme } = useThemeStore()
+
   return (
-    <ThemeProvider theme={selectedTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <div style={{ display: 'flex', gap: '2rem', flexDirection: 'column' }}>
-        <Header setSelectedTheme={setSelectedTheme} selectedTheme={selectedTheme} />
-        <MainPage  />
-      </div>
+      <Routers />
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App
