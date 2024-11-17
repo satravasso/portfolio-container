@@ -16,10 +16,10 @@ export const Title = styled.div`
 `
 
 export const DropdownWrapper = styled.div`
+  padding: 1rem;
   position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 `
 
 export const ColorThemeTitles = styled.div`

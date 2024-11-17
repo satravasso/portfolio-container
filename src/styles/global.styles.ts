@@ -23,7 +23,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   #root{
-    padding: 2rem;
     width: 100%;
 
     @media ${query.xl} {

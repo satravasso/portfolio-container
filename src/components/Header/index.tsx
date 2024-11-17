@@ -9,7 +9,11 @@ function Header() {
   const { theme } = useThemeStore()
   return (
     <S.HeaderContentainer>
-      <Logo color={theme.colors.iconColor} />
+      <div style={{ display: "flex", justifyContent: "flex-start", padding: "1rem" }}>
+        {/* <div style={{ backgroundColor: "#BA7575", borderRadius: "5rem", padding: ".5rem" }}> */}
+        <Logo color={theme.colors.iconColor} />
+      </div>
+      {/* </div> */}
       <S.HeaderLine />
       <S.HeaderContent>
         <Link to={`/about-me`} className="btn-header">
