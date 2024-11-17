@@ -14,12 +14,12 @@ export const routes: RouteObject[] = [
       },
       {
         path: `about-me`,
-        element: <Suspense fallback="Loading...">about me</Suspense>,
+        element: <Suspense fallback='Loading...'>about me</Suspense>,
       },
       {
         path: `git`,
         element: (
-          <Suspense fallback="Loading...">
+          <Suspense fallback='Loading...'>
             <div>git lfow</div>
           </Suspense>
         ),
