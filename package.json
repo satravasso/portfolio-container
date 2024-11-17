@@ -1,7 +1,7 @@
 {
   "name": "my-beautiful-portifolio",
   "version": "1.0.0",
-  "license" : "MIT",
+  "license": "MIT",
   "scripts": {
     "start": "webpack serve --config webpack.dev.js --progress",
     "build": "webpack --config webpack.prod.js ",
@@ -52,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.7.1",
     "eslint": "^9.14.0",
     "eslint-config-airbnb": "^19.0.4",
