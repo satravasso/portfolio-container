@@ -1,11 +1,7 @@
-import { ThemeProps } from "@styles/Theme/interfaces";
-import React from "react";
+import { ThemeProps } from "@styles/Theme/interfaces"
+import React from "react"
 
 export interface HeaderProps {
-  setSelectedTheme: React.Dispatch<React.SetStateAction<ThemeProps>>;
-  selectedTheme: ThemeProps;
-}
-
-export interface LogoProps {
-  color: string;
+  setSelectedTheme: React.Dispatch<React.SetStateAction<ThemeProps>>
+  selectedTheme: ThemeProps
 }

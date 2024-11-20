@@ -40,8 +40,8 @@
     "src",
     "src/**/*",
     "index.tsx",
-    "styles",
-    "public/locales"
+    "public/locales",
+    "src/custom.d.ts"
   ],
   "exclude": [
     "node_modules",

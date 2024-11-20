@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next"
-import { Logo } from "./logo"
+import { Logo } from "../Logos/MainLogo"
 import * as S from "./styles"
 import Button from "@components/Button"
 import useThemeStore from "store/useThemeStore"
