@@ -1,47 +1,50 @@
-import styled from "styled-components"
-
-export const MainPageContent = styled.section`
+.mainPageContent {
   display: flex;
-`
+}
 
-export const CardContainer = styled.div`
+.cardContainer {
   display: flex;
   gap: 2rem;
   padding: 2rem;
-`
-export const CardColumn = styled.div`
+}
+
+.cardColumn {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-`
+}
 
-export const TextContainer = styled.div`
+.textContainer {
   display: flex;
   flex-direction: column;
-`
+}
 
-export const Title = styled.h2`
+.title {
   font-size: 4.5rem;
   font-weight: 500;
-`
+}
 
-export const TitleCard = styled.h3`
+.titleCard {
   font-size: 2rem;
   font-weight: 500;
-`
+}
 
-export const CardContent = styled.div`
+.cardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-`
+}
 
-export const InAndEmailContainer = styled.div`
+.inAndEmailContainer {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-`
-export const Description = styled.span``
+}
+
+.description {
+  display: block;
+}
+

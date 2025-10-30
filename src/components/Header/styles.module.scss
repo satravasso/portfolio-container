@@ -1,0 +1,63 @@
+.headerContainer {
+  width: 100%;
+  border: var(--border-primary);
+  border-radius: 50px;
+  display: flex;
+  background-color: var(--primary);
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.headerLine {
+  border-bottom: 2px solid #1b2021;
+  width: 100%;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+
+  :global(.btn-header) {
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--font-color);
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    height: 100%;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+
+    &::after {
+      transform-origin: right;
+      transform: scaleX(0);
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background-color: var(--secondary);
+      transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    }
+  }
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+

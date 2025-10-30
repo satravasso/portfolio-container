@@ -1,0 +1,53 @@
+.colorButtonContent {
+  border: var(--border-primary);
+  border-radius: 50px;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 500;
+  padding: 1rem 2rem;
+  color: var(--font-color);
+}
+
+.dropdownWrapper {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.colorThemeTitles {
+  border-bottom: var(--border-secondary);
+}
+
+.colorContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.colorOption {
+  border-radius: 100px;
+  border: 2px solid #1b2021;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.languageContainer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.languageOption {
+  border-radius: 50px;
+  border: 2px solid #1b2021;
+  padding: 1rem;
+  cursor: pointer;
+}
+

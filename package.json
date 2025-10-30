@@ -21,7 +21,6 @@
     "@types/node": "^22.9.0",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
-    "@types/styled-components": "^5.1.25",
     "html-webpack-plugin": "^5.5.0",
     "i18next": "^21.8.4",
     "i18next-browser-languagedetector": "^6.1.4",
@@ -30,7 +29,6 @@
     "react-i18next": "^11.16.9",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^6.1.13",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1",
     "webpack-cli": "^5.1.4",
@@ -73,6 +71,8 @@
     "jest": "^28.1.0",
     "jest-canvas-mock": "^2.4.0",
     "prettier": "^3.3.3",
+    "sass": "^1.80.0",
+    "sass-loader": "^14.0.0",
     "style-loader": "^3.3.1",
     "three": "^0.151.3",
     "ts-jest": "^28.0.2",
@@ -83,9 +83,6 @@
   "extends": [
     "prettier"
   ],
-  "resolutions": {
-    "styled-components": "^5"
-  },
   "overrides": {
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc"

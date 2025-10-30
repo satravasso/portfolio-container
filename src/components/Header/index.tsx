@@ -1,22 +1,21 @@
 import { useTranslation } from "react-i18next"
 import { Logo } from "../Logos/MainLogo"
-import * as S from "./styles"
 import Button from "@components/Button"
-import useThemeStore from "store/useThemeStore"
 import { Link } from "react-router-dom"
+import styles from "./styles.module.scss"
 
 function Header() {
   const { t, i18n } = useTranslation()
-  const { theme } = useThemeStore()
+
   return (
-    <S.HeaderContentainer>
+    <div className={styles.headerContainer}>
       <Link to={`/`}>
-        <div style={{ display: "flex", justifyContent: "flex-start", padding: "1rem" }}>
-          <Logo color={theme.colors.iconColor} />
+        <div className={styles.logoContainer}>
+          <Logo color='#1E212D' />
         </div>
       </Link>
-      <S.HeaderLine />
-      <S.HeaderContent>
+      <div className={styles.headerLine} />
+      <div className={styles.headerContent}>
         <Link to={`/about-me`} className='btn-header'>
           <span>{t("about_me")}</span>
         </Link>
@@ -29,10 +28,10 @@ function Header() {
             <span>{t("contact")}</span>
           </a>
         </div>
-      </S.HeaderContent>
-      <S.HeaderLine />
+      </div>
+      <div className={styles.headerLine} />
       <Button />
-    </S.HeaderContentainer>
+    </div>
   )
 }
 

@@ -1,18 +1,18 @@
-import DropdownProps from './interfaces';
-import * as S from './styles';
+import DropdownProps from "./interfaces"
+import styles from "./styles.module.scss"
 
 function Dropdown(props: DropdownProps) {
-  const { children, open } = props;
+  const { children, open } = props
 
   return (
     <>
       {open && (
-        <S.DropdownContainer>
-          <div style={{ padding: '2rem', whiteSpace: 'nowrap' }}>{children}</div>
-        </S.DropdownContainer>
+        <div className={styles.dropdownContainer}>
+          <div className={styles.dropdownContent}>{children}</div>
+        </div>
       )}
     </>
-  );
+  )
 }
 
-export default Dropdown;
+export default Dropdown

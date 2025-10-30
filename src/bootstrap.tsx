@@ -5,9 +5,7 @@ import App from "./App"
 const container = document.querySelector("#root")
 const root = createRoot(container as Element)
 root.render(
-  <React.StrictMode>
-    <React.Suspense fallback='Loading...'>
-      <App />
-    </React.Suspense>
-  </React.StrictMode>
+  <React.Suspense fallback='Loading...'>
+    <App />
+  </React.Suspense>
 )

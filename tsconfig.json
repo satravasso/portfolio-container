@@ -41,7 +41,8 @@
     "src/**/*",
     "index.tsx",
     "public/locales",
-    "src/custom.d.ts"
+    "src/custom.d.ts",
+    "src/types"
   ],
   "exclude": [
     "node_modules",

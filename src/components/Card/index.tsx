@@ -1,13 +1,13 @@
 import { CardProps } from "./interfaces"
-import * as S from "./styles"
+import styles from "./styles.module.scss"
 
 function Card(props: CardProps) {
   const { children, backgroundColor } = props
 
   return (
-    <S.CardContainer style={{ backgroundColor }}>
-      <div style={{ padding: "1rem" }}>{children}</div>
-    </S.CardContainer>
+    <div className={styles.cardContainer} style={{ backgroundColor }}>
+      <div className={styles.cardContent}>{children}</div>
+    </div>
   )
 }
 

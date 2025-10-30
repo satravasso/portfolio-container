@@ -1,35 +1,50 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
-import * as S from "./styles"
 
-import { colorsTheme } from "../../styles/Theme"
 import Dropdown from "../Dropdown"
 import useThemeStore from "store/useThemeStore"
+import { ThemeName } from "store/useThemeStore/interface"
+import styles from "./styles.module.scss"
+
+const themeColors: Record<ThemeName, string> = {
+  pink: "#FFDEDE",
+  green: "#CDF0EA",
+  blue: "#afd3fa",
+}
 
 function Button() {
   const [openDropdown, setOpenDropdown] = useState(false)
-  const { toggleTheme } = useThemeStore()
+  const toggleTheme = useThemeStore((state) => state.toggleTheme)
   const { i18n } = useTranslation()
 
   return (
-    <S.DropdownWrapper>
-      <S.ColorButtonContent onClick={() => setOpenDropdown(!openDropdown)}>
-        <S.Title>Preferences</S.Title>
-      </S.ColorButtonContent>
+    <div className={styles.dropdownWrapper}>
+      <button className={styles.colorButtonContent} onClick={() => setOpenDropdown(!openDropdown)}>
+        <div className={styles.title}>Preferences</div>
+      </button>
       <Dropdown setOpen={setOpenDropdown} open={openDropdown}>
-        <S.ColorThemeTitles>Language</S.ColorThemeTitles>
-        <S.LanguageContainer>
-          <S.LanguageOption onClick={() => i18n.changeLanguage("en")}>En</S.LanguageOption>
-          <S.LanguageOption onClick={() => i18n.changeLanguage("pt")}>Pt</S.LanguageOption>
-        </S.LanguageContainer>
-        <S.ColorThemeTitles>Wich is your favorite color?</S.ColorThemeTitles>
-        <S.ColorContainer>
-          {colorsTheme.map((theme) => (
-            <S.ColorOption key="color" $color={theme.colors.primary} onClick={() => toggleTheme(theme)} />
+        <div className={styles.colorThemeTitles}>Language</div>
+        <div className={styles.languageContainer}>
+          <div className={styles.languageOption} onClick={() => i18n.changeLanguage("en")}>
+            En
+          </div>
+          <div className={styles.languageOption} onClick={() => i18n.changeLanguage("pt")}>
+            Pt
+          </div>
+        </div>
+        <div className={styles.colorThemeTitles}>Wich is your favorite color?</div>
+        <div className={styles.colorContainer}>
+          {(Object.keys(themeColors) as ThemeName[]).map((themeName) => (
+            <div
+              key={themeName}
+              className={styles.colorOption}
+              style={{ background: themeColors[themeName] }}
+              onClick={() => toggleTheme(themeName)}
+            />
           ))}
-        </S.ColorContainer>
+        </div>
       </Dropdown>
-    </S.DropdownWrapper>
+    </div>
   )
 }
 
