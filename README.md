@@ -122,7 +122,7 @@ src/
 │   ├── Dropdown/       # Dropdown selector
 │   ├── Header/         # Navigation header
 │   ├── Layout/         # Main layout wrapper
-│   └── Logos/          # SVG logo components
+│   └── Logo/           # SVG logo components
 │       └── index.ts    # Barrel export for logos
 ├── hooks/              # Custom React hooks
 ├── pages/              # Page components
@@ -234,7 +234,7 @@ import { Routers } from '@routers'
 import { useThemeStore } from '@store'
 
 // ✅ Also valid: Direct component imports
-import { LogoGit } from '@components/Logos'
+import { LogoGit } from '@components/Logo'
 ```
 
 ## 🎨 Theming
