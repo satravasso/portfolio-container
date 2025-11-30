@@ -1,3 +1,6 @@
+// Forward design tokens
+@forward './tokens';
+
 // Forward all theme variations to make their CSS selectors available
 @forward './pink';
 @forward './green';
@@ -11,19 +14,36 @@
   --font-color: #1E212D;
   --icon-color: #1E212D;
   --secondary: #BA7575;
-  --border-primary: 2px solid #1b2021;
-  --border-secondary: 1px solid #6a6c72;
+  --border-primary: var(--border-width-md) solid #1b2021;
+  --border-secondary: var(--border-width-sm) solid #6a6c72;
 }
 
-// Helper mixins for responsive design
+// Breakpoints Mobile First
+$breakpoint-desktop: 1280px;
+
+// Mixin mobile-first (min-width)
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Mixin para container máximo
+@mixin container-xl {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+// Backward compatibility: manter respond-to para não quebrar código existente
 @mixin respond-to($breakpoint) {
   @if $breakpoint == xl {
-    @media (min-width: 1920px) {
+    @include container-xl {
       @content;
     }
   }
   @if $breakpoint == lg {
-    @media (min-width: 1280px) {
+    @include desktop {
       @content;
     }
   }

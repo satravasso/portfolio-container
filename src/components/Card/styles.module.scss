@@ -1,11 +1,13 @@
+@use '../../styles/themes/variables' as *;
+
 .cardContainer {
   border: var(--border-primary);
   width: 100%;
   height: auto;
-  border-radius: 30px;
+  border-radius: var(--radius-xl);
 }
 
 .cardContent {
-  padding: 1rem;
+  padding: var(--space-4);
 }
 

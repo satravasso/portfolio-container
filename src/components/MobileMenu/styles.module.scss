@@ -1,0 +1,52 @@
+@use '../../styles/themes/variables' as *;
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-normal);
+  cursor: pointer;
+}
+
+.backdropOpen {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menuContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 400px;
+  background-color: var(--primary);
+  border-left: var(--border-primary);
+  border-radius: var(--radius-2xl) 0 0 var(--radius-2xl);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform var(--transition-normal);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+  box-shadow: var(--shadow-lg);
+}
+
+.menuContainerOpen {
+  transform: translateX(0);
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  width: 100%;
+}
+

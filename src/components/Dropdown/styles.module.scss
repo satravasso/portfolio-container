@@ -1,17 +1,19 @@
+@use '../../styles/themes/variables' as *;
+
 .dropdownContainer {
   position: absolute;
   top: 100%;
   right: 0;
   border: var(--border-primary);
   background: #ffff;
-  border-radius: 50px;
+  border-radius: var(--radius-2xl);
   list-style: none;
-  padding: 0;
-  margin-top: 0.3rem;
+  padding: var(--space-0);
+  margin-top: var(--space-1);
 }
 
 .dropdownContent {
-  padding: 2rem;
+  padding: var(--space-8);
   white-space: nowrap;
 }
 

@@ -1,18 +1,22 @@
+@use '../../styles/themes/variables' as *;
+
 .colorButtonContent {
   border: var(--border-primary);
-  border-radius: 50px;
+  border-radius: var(--radius-2xl);
   background-color: var(--secondary);
   cursor: pointer;
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
 }
 
 .title {
-  font-weight: 500;
-  padding: 1rem 2rem;
+  font-weight: var(--font-weight-medium);
+  padding: var(--space-4) var(--space-8);
   color: var(--font-color);
 }
 
 .dropdownWrapper {
-  padding: 1rem;
+  padding: var(--space-4);
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -25,29 +29,33 @@
 .colorContainer {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem;
-  gap: 1rem;
+  padding: var(--space-4);
+  gap: var(--space-4);
 }
 
 .colorOption {
-  border-radius: 100px;
-  border: 2px solid #1b2021;
-  width: 50px;
-  height: 50px;
+  border-radius: var(--radius-full);
+  border: var(--border-width-md) solid #1b2021;
+  width: var(--touch-target-min);
+  height: var(--touch-target-min);
   cursor: pointer;
+  min-width: var(--touch-target-min);
+  min-height: var(--touch-target-min);
 }
 
 .languageContainer {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem;
-  gap: 1rem;
+  padding: var(--space-4);
+  gap: var(--space-4);
 }
 
 .languageOption {
-  border-radius: 50px;
-  border: 2px solid #1b2021;
-  padding: 1rem;
+  border-radius: var(--radius-2xl);
+  border: var(--border-width-md) solid #1b2021;
+  padding: var(--space-4);
   cursor: pointer;
+  min-height: var(--touch-target-min);
+  min-width: var(--touch-target-min);
 }
 

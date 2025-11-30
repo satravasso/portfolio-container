@@ -1,15 +1,15 @@
 @use './themes/variables' as *;
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family-primary);
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: var(--space-0);
+  padding: var(--space-0);
   background: var(--body-color);
 
-  @include respond-to(xl) {
+  @include desktop {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,8 +20,8 @@ body {
 #root {
   width: 100%;
 
-  @include respond-to(xl) {
-    max-width: 1920px;
+  @include container-xl {
+    max-width: var(--container-max-width);
   }
 }
 

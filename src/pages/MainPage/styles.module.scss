@@ -1,40 +1,57 @@
+@use '../../styles/themes/variables' as *;
+
 .mainPageContent {
   display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .cardContainer {
   display: flex;
-  gap: 2rem;
-  padding: 2rem;
+  flex-direction: column;
+  gap: var(--space-8);
+  padding: var(--space-8);
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .cardColumn {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: var(--space-8);
   width: 100%;
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
+  padding: var(--space-8);
 }
 
 .title {
-  font-size: 4.5rem;
-  font-weight: 500;
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-medium);
+
+  @include desktop {
+    font-size: var(--font-size-5xl);
+  }
 }
 
 .titleCard {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-medium);
 }
 
 .cardContent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-4);
 }
 
 .inAndEmailContainer {
