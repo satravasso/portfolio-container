@@ -20,7 +20,7 @@ export const routes: RouteObject[] = [
         path: `git`,
         element: (
           <Suspense fallback='Loading...'>
-            <div>git lfow</div>
+            <div>git flow</div>
           </Suspense>
         ),
       },
