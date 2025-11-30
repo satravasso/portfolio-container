@@ -116,25 +116,32 @@ yarn clean
 src/
 ├── assets/              # Static assets (SVG logos, images)
 ├── components/          # Reusable UI components
+│   ├── index.ts        # Barrel export for all components
 │   ├── Button/         # Theme switcher button
 │   ├── Card/           # Content card component
 │   ├── Dropdown/       # Dropdown selector
 │   ├── Header/         # Navigation header
 │   ├── Layout/         # Main layout wrapper
 │   └── Logos/          # SVG logo components
+│       └── index.ts    # Barrel export for logos
 ├── hooks/              # Custom React hooks
 ├── pages/              # Page components
-│   └── MainPage.tsx   # Landing page
+│   ├── index.ts        # Barrel export for all pages
+│   └── MainPage/       # Landing page (modular structure)
+│       ├── index.tsx   # Main page component
+│       └── styles.module.scss
 ├── routers/            # Routing configuration
-│   ├── Routers.tsx    # Router provider
-│   └── routes.tsx     # Route definitions
+│   ├── index.ts        # Barrel export for router
+│   └── Routers.tsx     # Router provider and routes
 ├── store/              # Zustand state stores
-│   └── useThemeStore/ # Theme management
+│   ├── index.ts        # Barrel export for stores
+│   └── useThemeStore/  # Theme management
 ├── styles/             # Global styles and themes
 │   ├── themes/        # Theme definitions (pink, green, blue)
 │   └── global.scss    # Global styles
 ├── types/              # TypeScript type definitions
 ├── utils/              # Utility functions
+│   ├── index.ts        # Barrel export for utilities
 │   ├── i18n.ts        # Internationalization setup
 │   └── storage.ts     # Local storage utilities
 ├── App.tsx             # Root component
@@ -206,10 +213,29 @@ ModuleFederationPlugin({
 ### TypeScript Configuration
 - Strict mode enabled
 - Path aliases for clean imports:
-  - `@components/*` → `src/components/*`
-  - `@pages/*` → `src/pages/*`
+  - `@components` → `src/components` (barrel export)
+  - `@components/*` → `src/components/*` (individual components)
+  - `@pages` → `src/pages` (barrel export)
+  - `@pages/*` → `src/pages/*` (individual pages)
+  - `@routers` → `src/routers` (barrel export)
+  - `@store` → `src/store` (barrel export)
+  - `@utils` → `src/utils` (barrel export)
   - `@assets/*` → `src/assets/*`
   - `@styles/*` → `src/styles/*`
+
+### Import Strategy
+The project uses **barrel exports pattern** for clean, consistent imports:
+
+```typescript
+// ✅ Preferred: Using barrel exports
+import { Button, Card, Layout } from '@components'
+import { MainPage } from '@pages'
+import { Routers } from '@routers'
+import { useThemeStore } from '@store'
+
+// ✅ Also valid: Direct component imports
+import { LogoGit } from '@components/Logos'
+```
 
 ## 🎨 Theming
 

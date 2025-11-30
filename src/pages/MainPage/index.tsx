@@ -1,7 +1,4 @@
-import { LogoGit } from "@components/Logos/LogoGit"
-import Card from "../components/Card"
-import { LogoLinkedin } from "@components/Logos/LogoLinkedin"
-import { LogoMail } from "@components/Logos/LogoMail"
+import { Card, LogoGit, LogoLinkedin, LogoMail } from "@components"
 import styles from "./styles.module.scss"
 
 function MainPage() {

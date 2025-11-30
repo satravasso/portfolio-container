@@ -27,3 +27,5 @@ yarn-error.log*
 ai/
 current-work.md
 PROMPTS.md
+.PROMPTS.md
+/PROMPTS.md

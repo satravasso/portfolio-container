@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next"
-import { Logo } from "../Logos/MainLogo"
-import Button from "@components/Button"
 import { Link } from "react-router-dom"
+
+import { Button, Logo } from "@components"
 import styles from "./styles.module.scss"
 
 function Header() {

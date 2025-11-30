@@ -1,7 +1,8 @@
-import Header from "@components/Header"
 import React from "react"
-import LayoutProps from "./interfaces"
 import { Outlet } from "react-router-dom"
+
+import { Header } from "@components"
+import LayoutProps from "./interfaces"
 import styles from "./styles.module.scss"
 
 const Layout: React.FC<LayoutProps> = () => {

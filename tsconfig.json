@@ -22,11 +22,23 @@
     "baseUrl": "./src",
     "moduleResolution": "node",
     "paths": {
-      "@components/*": [
-        "components/*"
+      "@components": [
+        "components"
       ],
       "@pages/*": [
         "pages/*"
+      ],
+      "@pages": [
+        "pages"
+      ],
+      "@routers": [
+        "routers"
+      ],
+      "@store": [
+        "store"
+      ],
+      "@utils": [
+        "utils"
       ],
       "@assets/*": [
         "assets/*"
@@ -41,7 +53,7 @@
     "src/**/*",
     "index.tsx",
     "public/locales",
-    "src/custom.d.ts",
+    "src/types/custom.d.ts",
     "src/types"
   ],
   "exclude": [

@@ -1,9 +1,8 @@
 import { useState } from "react"
 import { useTranslation } from "react-i18next"
 
-import Dropdown from "../Dropdown"
-import useThemeStore from "store/useThemeStore"
-import { ThemeName } from "store/useThemeStore/interface"
+import { Dropdown } from "@components"
+import { useThemeStore, ThemeName } from "@store"
 import styles from "./styles.module.scss"
 
 const themeColors: Record<ThemeName, string> = {
